@@ -1,5 +1,8 @@
 # Acid example
 use_synth :tb303
+# use_synth :dark_ambience, :dpulse, 
+# :chipnoise // burned tech
+# This effect with differnt synth is amazing try it out ...
 
 loop do
   play 50, release: 0.1, cutoff: rrand(60, 120)
