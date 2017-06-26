@@ -1,3 +1,4 @@
+# Acid example
 use_synth :tb303
 
 loop do
