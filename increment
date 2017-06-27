@@ -1,0 +1,36 @@
+
+# use_synth :dark_ambience, :dpulse,
+# :chipnoise // burned tech
+# This effect with differnt synth is amazing try it out ...
+
+
+live_loop :flibble do
+  use_synth :tb303
+  play 50, release: 0.1, cutoff: rrand(60, 120), amp: 0.1
+  sleep 0.125
+end
+
+live_loop :ambient do
+  use_synth :dark_ambience
+  play 50, release: 0.1, cutoff: rrand(60, 120), amp: 0.2
+  sleep 0.125
+end
+
+live_loop :dpulse do
+  use_synth :dpulse
+  play 50, release: 0.1, cutoff: rrand(60, 120), amp: 1.0
+  sleep 0.125
+end
+
+
+live_loop :flibble1 do
+  sample :bass_hit_c, amp: 3
+  sample :bass_hit_c, amp: 4
+  sleep 0.5
+end
+
+live_loop :bd_boom do
+  sample :bd_boom, amp: 2
+  #sample :bass_hit_c, amp: 4
+  sleep 0.5
+end
